@@ -13,8 +13,65 @@
 		<script src="{% static '/vendors/jquery/jquery-3.3.1.min.js' %}"></script>
 		<script src="{% static '/vendors/jquery-ui/jquery-ui.min.js' %}"></script>
 	</head>
-	<body>
-		<!-- Your layout here -->
+  <body>
+      <!-- Your layout here -->
+      <div class = "box">
+        <div class = "stretched mybox">1</div>
+        <div class = "stretched mybox">2</div>
+        <div class = "stretched mybox">3</div>
+        <div class = "stretched mybox">4</div>
+        <div class = "stretched mybox">5</div>
+        <div class = "stretched mybox">6</div>
+        <div class = "stretched mybox1">7</div>
+        <div class = "stretched mybox">8</div>
+        <div class = "stretched mybox1">9</div>
+        <div class = "stretched mybox">10</div>
+      </div>
+    <div class = "box">
+      <div class = "mybox1">6</div>
+    </div>
+    </body>
 
-	</body>
-</html>
+    <style>
+
+      .mybox {
+        background-color: orange;
+        color: orange;
+        border-style: solid;
+        width: 18%;
+        height: 25%;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+      .mybox1 {
+        background-color: purple;
+        color: purple;
+        border-style: solid;
+        width: 18%;
+        height: 25%;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+      .box {
+        display: flex;
+        align-items: row-reverse;
+        flex-wrap: wrap;
+        height: 500px;
+        background-color : purple;
+        align-content: center;
+
+      }
+      
+      .stretched {
+        align-self: stretch;
+      }
+      .box .selected {
+        align-self: center;
+      }
+    </style>
+
+  </html>
